@@ -24,7 +24,6 @@
 - [创新点](#创新点)
 - [技术栈](#技术栈)
 - [安装部署](#安装部署)
-- [测试结果](#测试结果)
 - [参考文献](#参考文献)
 - [许可证](#许可证)
 
@@ -49,12 +48,6 @@
 
 系统采用 **多层防御 + 智能分析 + 实时漏洞更新 + 靶场模拟攻击** 的综合安全防护架构设计，分为攻击与防御两个层面，并引入深度学习技术。
 
-### 总体架构图
-
-<div align="center">
-  <img src="docs/images/architecture.png" alt="系统总体架构图" width="90%">
-  <p><em>图1: 系统总体架构图</em></p>
-</div>
 
 ### 系统框架图
 
@@ -63,19 +56,8 @@
   <p><em>图2: 系统框架图</em></p>
 </div>
 
-### 系统设计
 
-<div align="center">
-  <img src="docs/images/system_design.png" alt="系统设计图" width="90%">
-  <p><em>图3: 系统详细设计图</em></p>
-</div>
 
-### 模块划分
-
-<div align="center">
-  <img src="docs/images/modules.png" alt="模块划分图" width="80%">
-  <p><em>图4: 核心模块划分</em></p>
-</div>
 
 ### 数据流与工作流程
 
@@ -87,17 +69,7 @@
 4. **雷霆漏扫** 对公司内网进行漏洞扫描，定位漏洞服务器，匹配 N-day 漏洞
 5. 处置阶段：删除后门、打补丁修复，同时由微步沙箱和逆向溯源提供外部协同
 
-<div align="center">
-  <img src="docs/images/dataflow.png" alt="数据流图" width="80%">
-  <p><em>图5: 系统数据流与工作流程图</em></p>
-</div>
 
-### 网络拓扑
-
-<div align="center">
-  <img src="docs/images/network_topology.png" alt="网络拓扑图" width="90%">
-  <p><em>图6: 网络部署拓扑图</em></p>
-</div>
 
 ---
 
@@ -106,7 +78,7 @@
 ### 模块一：神盾靶场
 
 <div align="center">
-  <img src="docs/images/target_machine_screenshot.png" alt="神盾靶场界面" width="80%">
+  <img src="docs/images/modules.png" alt="模块划分图" width="80%">
   <p><em>图7: 神盾靶场 — 基于 DVWA 二次开发的 Web 漏洞靶场</em></p>
 </div>
 
@@ -136,7 +108,7 @@
 ### 模块二：天眼态感
 
 <div align="center">
-  <img src="docs/images/situational_awareness_dashboard.png" alt="天眼态势感知大屏" width="80%">
+  <img src="docs/images/dataflow.png" alt="数据流图" width="80%">
   <p><em>图8: 天眼态感 — 态势感知可视化大屏</em></p>
 </div>
 
@@ -159,7 +131,7 @@
 ### 模块三：雷霆漏扫
 
 <div align="center">
-  <img src="docs/images/vuln_scanner_dashboard.png" alt="雷霆漏扫控制台" width="80%">
+  <img src="docs/images/network_topology.png" alt="网络拓扑图" width="90%">
   <p><em>图9: 雷霆漏扫 — 网络资产与漏洞扫描管理平台</em></p>
 </div>
 
@@ -188,7 +160,7 @@
 ### 模块四：深度学习入侵检测系统 (IDS)
 
 <div align="center">
-  <img src="docs/images/deep_learning_algorithm.png" alt="深度学习算法架构" width="85%">
+  <img src="docs/images/target_machine_screenshot.png" alt="神盾靶场界面" width="80%">
   <p><em>图10: 基于 Transformer 和多小波注意力学习的入侵检测算法架构</em></p>
 </div>
 
@@ -293,24 +265,6 @@ python web.py
 ```
 
 > **注意：** `NSSA/libs/GeoLite2-City.mmdb`（MaxMind GeoIP 数据库，约 59MB）因体积过大未包含在仓库中，请自行从 [MaxMind](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) 下载并放置到对应目录。
-
----
-
-## ✅ 测试结果
-
-<div align="center">
-  <img src="docs/images/test_results.png" alt="测试结果汇总" width="85%">
-  <p><em>图12: 各模块测试结果</em></p>
-</div>
-
-| 测试项 | 结果 | 说明 |
-|-------|------|------|
-| **用户登录** | ✅ 通过 | 正常登录、错误密码、权限校验 |
-| **神盾靶场攻击测试** | ✅ 通过 | Low/Medium/High 难度攻击成功，Impossible 难度攻击失败（符合预期） |
-| **天眼态感** | ✅ 通过 | 态势感知大屏、地图显示、攻击事件列表、IP 管理、防御统计、流量数据均正常 |
-| **雷霆漏扫** | ✅ 通过 | 内网 SMB 445 端口、Web 80 端口资产收集成功；永恒之蓝和 SQL 注入漏洞扫描成功 |
-| **微步沙箱** | ✅ 通过 | PHP 一句话木马、勒索软件、恶意 DLL 注入全部检测成功 |
-| **逆向溯源** | ✅ 通过 | 私有 IP 溯源失败（预期），公网 IP 溯源成功 |
 
 ---
 > 全国大学生软件创新大赛 — 软件系统安全赛 参赛作品
