@@ -1,0 +1,44 @@
+body {
+    background-color: #f9f9f9; /* 更新背景色 */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; /* 增加字体大小 */
+    line-height: 1.6; /* 增加行间距 */
+    color: #333; /* 更新字体颜色 */
+}
+
+h1 {
+    font-size: 2.5em; /* 增加标题大小 */
+    color: #2d2d2d; /* 更新标题颜色 */
+    margin-bottom: 20px; /* 增加底部间距 */
+}
+
+div#container {
+    max-width: 900px; /* 限制最大宽度 */
+    margin: 0 auto; /* 居中 */
+    padding: 20px; /* 增加内边距 */
+    background-color: #ffffff; /* 背景色为白色 */
+    border-radius: 8px; /* 增加圆角 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+div#code {
+    background-color: #f4f4f4; /* 更柔和的背景色 */
+    border: 1px solid #ddd; /* 增加边框 */
+    padding: 10px; /* 增加内边距 */
+    border-radius: 4px; /* 增加圆角 */
+    overflow: auto; /* 处理溢出 */
+}
+
+div#area {
+    margin-left: 30px; /* 左侧边距 */
+}
+
+.loginSuccess {
+    color: #4CAF50; /* 更新成功消息颜色 */
+    font-weight: bold; /* 加粗文本 */
+}
+
+.loginFail {
+    color: #f44336; /* 更新失败消息颜色 */
+    font-weight: bold; /* 加粗文本 */
+}

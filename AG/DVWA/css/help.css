@@ -1,0 +1,47 @@
+body {
+    background-color: #f4f4f4; /* 更加柔和的背景颜色 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 更新字体为更现代的选择 */
+    font-size: 14px; /* 增加字体大小 */
+    line-height: 1.6; /* 提升行间距，使文本更易读 */
+}
+
+h1 {
+    font-size: 28px; /* 增加标题大小 */
+    color: #333; /* 使用更深的颜色 */
+    text-align: center; /* 中央对齐 */
+}
+
+div#container {
+    max-width: 960px; /* 限制容器的最大宽度 */
+    margin: 0 auto; /* 自动边距以居中 */
+    padding: 20px; /* 添加内边距 */
+    border-radius: 8px; /* 添加圆角 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    background-color: #ffffff; /* 确保容器背景为白色 */
+}
+
+div#code {
+    background-color: #f9f9f9; /* 代码区域背景色稍微变亮 */
+    padding: 15px; /* 添加内边距 */
+    border: 1px solid #ddd; /* 添加边框 */
+    border-radius: 4px; /* 添加圆角 */
+    overflow-x: auto; /* 允许水平滚动 */
+}
+
+div#area {
+    margin-left: 40px; /* 增加左边距 */
+    margin-top: 15px; /* 添加顶部边距 */
+}
+
+span.spoiler {
+    background-color: #333; /* 将背景色改为深灰色 */
+    color: #fff; /* 文字颜色为白色 */
+    padding: 5px; /* 添加内边距 */
+    border-radius: 4px; /* 添加圆角 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+span.spoiler:hover {
+    background-color: #555; /* 鼠标悬停时改变背景色 */
+}

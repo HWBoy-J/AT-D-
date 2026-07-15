@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    color: #333;
+    font: 14px/1.6 'Arial', sans-serif;
+    min-width: 981px;
+    height: 100%;
+    position: relative;
+    background: #fafafa; /* 更柔和的背景色 */
+}
+
+body.home {
+    background: #f9f9f9; /* 改变主背景色 */
+    /* 背景颜色和图片示例 */
+    background-image: url('../images/background.jpg'); /* 背景图片 */
+    background-size: cover; /* 图片覆盖 */
+    background-position: center; /* 图片居中 */
+    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */ /* 渐变示例 */
+    height: 100vh; /* 确保高度覆盖整个视口 */
+    margin: 0; /* 去掉默认边距 */
+}
+
+div.clear {
+    clear: both;
+}
+
+a {
+    color: #5c8df7; /* 现代的链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* 悬停时添加下划线 */
+}
+
+input, textarea, select {
+    font: 100% 'Arial', sans-serif;
+    vertical-align: middle;
+    border: 1px solid #ccc; /* 统一输入框边框 */
+    border-radius: 4px; /* 增加圆角 */
+    padding: 8px; /* 增加内边距 */
+}
+
+form, fieldset {
+    margin: 0;
+    padding: 0;
+    border: none; /* 明确无边框 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* 统一标题的上下边距 */
+}
+
+h1 {
+    font-size: 2.5em; /* 更大的主标题 */
+    color: #2d2d2d; /* 更新颜色 */
+}
+
+h2 {
+    font-size: 2em; /* 更新字体大小 */
+    color: #4a4a4a; /* 更新颜色 */
+}
+
+h3 {
+    font-size: 1.5em; /* 更新字体大小 */
+}
+
+hr {
+    border: none;
+    background-color: #e0e0e0; /* 更柔和的分隔线颜色 */
+    height: 1px;
+}
+
+ul.menuBlocks {
+    display: flex; /* 使用Flexbox进行横向排列 */
+    list-style-type: none; /* 去掉默认的列表样式 */
+    padding-left: 0; /* 去掉默认的内边距 */
+    margin: 0; /* 去掉默认的外边距 */
+}
+
+.fixed {
+    font-family: 'Courier New', Courier, monospace; /* 统一字体 */
+    font-size: 13px; /* 更新字体大小 */
+}
+
+div.warning {
+    border: 2px solid #ff4d4d; /* 更明显的警告边框颜色 */
+    padding: 15px;
+    background-color: #ffe6e6; /* 更柔和的背景 */
+    color: #d00000; /* 更深的颜色 */
+}
+
+div.message {
+    border: 1px solid #C0C0C0; /* 统一边框色 */
+    padding: 15px; /* 更新内边距 */
+    margin: 10px 0;
+    background-color: #f8fafa; /* 统一背景色 */
+    width: 100%; /* 统一宽度 */
+}
+
+div#container {
+    max-width: 900px; /* 设置最大宽度 */
+    margin: 0 auto; /* 统一居中 */
+    background: #ffffff; /* 统一背景色 */
+    padding: 0px; /* 统一内边距 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+div#header {
+    padding: 15px; /* 更新内边距 */
+    background: rgb(61, 73, 90); /* 更深的背景色 */
+    color: white; /* 更新文字颜色 */
+    text-align: center;
+}
+
+div#title {
+    display: flex;              /* 启用 Flexbox 布局 */
+    justify-content: flex-start; /* 从左到右排列 */
+    align-items: center;        /* 垂直居中 */
+    gap: 10px;                  /* 设置元素间隔 */
+    height: 70px;              /* 设置容器高度以便于居中 */
+}
+
+div#title #text {
+    display: block;
+    font-size: 22px/* 这里可以省略，span 默认是 inline */
+}
+
+div#title #titleimg {
+    max-width: 9%;
+    padding-left: 20px;
+    height: auto;
+    display: block;
+}
+
+svg{
+    width: 2.5%;
+    height: auto;
+    margin-left: 2px;
+    justify-content: center; /* 水平居中 */
+}
+
+div#main_body {
+    float: right;
+    width: 95%; /* 统一宽度 */
+    background: #f4f4f4; /* 统一背景色 */
+    padding: 20px; /* 统一内边距 */
+}
+
+div.body_padded {
+    padding: 20px; /* 统一内边距 */
+}
+
+div#main_menu {
+    display: flex; /* 使用flex布局 */
+    justify-content: flex-start; /* 左对齐，便于换行 */
+    align-items: center; /* 垂直居中对齐 */
+    background-color: #f9f9f9; /* 统一背景色 */
+    padding: 5px; /* 统一内边距 */
+    border-bottom: 1px solid #ddd; /* 添加底边框 */
+    flex-wrap: wrap; /* 允许换行 */
+    max-width: 100%; /* 限制最大宽度 */
+}
+
+div#main_menu li{
+    list-style-type: none; /* 移除列表项符号 */
+    margin: 5px; /* 设置外边距 */
+    padding: 8px 12px; /* 调整内边距，使按钮更小 */
+    background-color: #eaeaea; /* 统一背景色 */
+    border: 1px solid #ddd; /* 更新边框颜色 */
+    transition: background-color 0.3s; /* 添加过渡效果 */
+    flex: 1 1 calc(48% - 10px); /* 每个按钮占据48%宽度，减去外边距 */
+    box-sizing: border-box; /* 包含边框和内边距 */
+    font-size: 10px; /* 调整字体大小 */
+    display: flex; /* 使li成为flex容器 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+div#main_menu li a{
+    text-decoration: none; /* 去掉下划线 */
+    color: inherit; /* 继承父元素颜色 */
+    width: 100%; /* 链接宽度100%以覆盖li */
+    display: flex; /* 使a成为flex容器 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+a#link {
+    text-decoration: none; /* 去掉下划线 */
+    color: inherit; /* 继承父元素颜色 */
+    width: 100%; /* 链接宽度100%以覆盖li */
+    display: flex; /* 使a成为flex容器 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    font-size: 20px;
+}
+
+div#main_menu li.selected {
+    background-color: #5c8df7; /* 更新选中状态颜色 */
+    color: white; /* 选中状态文字颜色 */
+}
+
+div#footer {
+    color: #999999; /* 统一文字颜色 */
+    background: rgb(61, 73, 90); /* 更深的背景色 */
+    padding: 15px; /* 更新内边距 */
+    text-align: center;
+}
+
+input.popup_button {
+    border: 1px solid #ccc; /* 统一边框颜色 */
+    padding: 8px 12px; /* 统一内边距 */
+    background-color: #8dadf1; /* 更新背景色 */
+    color: white; /* 更新文字颜色 */
+    cursor: pointer; /* 鼠标悬停时变化 */
+}
+
+input.popup_button:hover {
+    background-color: #4a9ef7; /* 悬停状态背景色 */
+}
+
+div.vulnerable_code_area {
+    background-color: #f0f8ff; /* 更轻的背景色 */
+    border: 1px solid #ccc; /* 统一边框颜色 */
+    padding: 10px; /* 更新内边距 */
+    margin-bottom: 20px; /* 统一间距 */
+}
+
+pre {
+    background-color: #f4f4f4; /* 更轻的背景色 */
+    padding: 10px; /* 统一内边距 */
+    border: 1px solid #ccc; /* 统一边框颜色 */
+    color: red; /* 统一文字颜色 */
+}
+
+div.submenu {
+    border-bottom: 1px solid #ccc; /* 更柔和的边框 */
+    margin-bottom: 15px; /* 统一间距 */
+    padding: 5px 0; /* 统一内边距 */
+}
+
+span.success {
+    color: #28a745; /* 更新成功信息颜色 */
+}
+
+span.failure {
+    color: #dc3545; /* 更新失败信息颜色 */
+    font-weight: bold; /* 统一字体样式 */
+}
+

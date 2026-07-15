@@ -1,0 +1,55 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# === PHP ===
+vendor/
+
+# === Claude Code ===
+.claude/
+
+# === IDE ===
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# === 数据库 / 备份 ===
+*.db
+*.sqlite
+*.bak
+*.bson
+*.metadata.json
+
+# === 日志 / 输出 ===
+*.log
+NSSA/output/
+
+# === 模板缓存 ===
+NSSA/.idea/
+
+# === 临时文件 ===
+extracted_images/
+*.tmp
+*.temp
+
+# === 大型二进制文件 ===
+NSSA/libs/GeoLite2-City.mmdb
+
+# === 敏感配置 (本地覆盖用) ===
+config.local.php
+config.local.py
+*.env.local
