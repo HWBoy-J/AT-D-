@@ -56,18 +56,25 @@
   <p><em>图1: 系统总体架构图</em></p>
 </div>
 
+### 系统框架图
+
+<div align="center">
+  <img src="docs/images/framework.png" alt="系统框架图" width="90%">
+  <p><em>图2: 系统框架图</em></p>
+</div>
+
 ### 系统设计
 
 <div align="center">
   <img src="docs/images/system_design.png" alt="系统设计图" width="90%">
-  <p><em>图2: 系统详细设计图</em></p>
+  <p><em>图3: 系统详细设计图</em></p>
 </div>
 
 ### 模块划分
 
 <div align="center">
   <img src="docs/images/modules.png" alt="模块划分图" width="80%">
-  <p><em>图3: 核心模块划分</em></p>
+  <p><em>图4: 核心模块划分</em></p>
 </div>
 
 ### 数据流与工作流程
@@ -82,14 +89,14 @@
 
 <div align="center">
   <img src="docs/images/dataflow.png" alt="数据流图" width="80%">
-  <p><em>图4: 系统数据流与工作流程图</em></p>
+  <p><em>图5: 系统数据流与工作流程图</em></p>
 </div>
 
 ### 网络拓扑
 
 <div align="center">
   <img src="docs/images/network_topology.png" alt="网络拓扑图" width="90%">
-  <p><em>图5: 网络部署拓扑图</em></p>
+  <p><em>图6: 网络部署拓扑图</em></p>
 </div>
 
 ---
@@ -100,7 +107,7 @@
 
 <div align="center">
   <img src="docs/images/target_machine_screenshot.png" alt="神盾靶场界面" width="80%">
-  <p><em>图6: 神盾靶场 — 基于 DVWA 二次开发的 Web 漏洞靶场</em></p>
+  <p><em>图7: 神盾靶场 — 基于 DVWA 二次开发的 Web 漏洞靶场</em></p>
 </div>
 
 **功能描述：** 基于 DVWA（Damn Vulnerable Web Application）二次开发，模拟存在漏洞的网站环境，供安全人员进行渗透测试和攻防演练。系统故意引入 **OWASP Top 10** 漏洞，涵盖从 Low 到 Impossible 四个难度级别。
@@ -130,7 +137,7 @@
 
 <div align="center">
   <img src="docs/images/situational_awareness_dashboard.png" alt="天眼态势感知大屏" width="80%">
-  <p><em>图7: 天眼态感 — 态势感知可视化大屏</em></p>
+  <p><em>图8: 天眼态感 — 态势感知可视化大屏</em></p>
 </div>
 
 **功能描述：** 基于 Flask 框架开发的网络安全态势感知平台，提供出入流量监控、恶意流量拦截、公司资产状况宏观可视化展示及 WAF 输入验证。
@@ -153,7 +160,7 @@
 
 <div align="center">
   <img src="docs/images/vuln_scanner_dashboard.png" alt="雷霆漏扫控制台" width="80%">
-  <p><em>图8: 雷霆漏扫 — 网络资产与漏洞扫描管理平台</em></p>
+  <p><em>图9: 雷霆漏扫 — 网络资产与漏洞扫描管理平台</em></p>
 </div>
 
 **功能描述：** 基于 Python 开发的网络资产与漏洞扫描平台，自动化检测内网服务器的健康状况，包括日常基线检查和攻击后排查。
@@ -182,7 +189,7 @@
 
 <div align="center">
   <img src="docs/images/deep_learning_algorithm.png" alt="深度学习算法架构" width="85%">
-  <p><em>图9: 基于 Transformer 和多小波注意力学习的入侵检测算法架构</em></p>
+  <p><em>图10: 基于 Transformer 和多小波注意力学习的入侵检测算法架构</em></p>
 </div>
 
 **技术特色：** 基于 **Transformer 和多小波注意力学习** 的实时入侵检测系统（基于指导老师已发表的 IEEE IoT Journal 2024 论文研究成果）。
@@ -222,7 +229,7 @@
 
 <div align="center">
   <img src="docs/images/deployment_flow.png" alt="部署流程图" width="80%">
-  <p><em>图10: 系统部署与运行流程图</em></p>
+  <p><em>图11: 系统部署与运行流程图</em></p>
 </div>
 
 | 模块 | 技术栈 | 关键依赖 |
@@ -293,7 +300,7 @@ python web.py
 
 <div align="center">
   <img src="docs/images/test_results.png" alt="测试结果汇总" width="85%">
-  <p><em>图11: 各模块测试结果</em></p>
+  <p><em>图12: 各模块测试结果</em></p>
 </div>
 
 | 测试项 | 结果 | 说明 |
